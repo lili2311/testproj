@@ -4,7 +4,9 @@
   "description": "test project for using snyk",
   "main": "index.js",
   "scripts": {
-    "test": "tap test/*.js"
+    "test": "tap test/*.js",
+    "docker-build": "docker build -t testproj .",
+    "snyk-test-docker": "snyk test --docker testproj:latest"
   },
   "author": "Jeff M",
   "license": "ISC",
