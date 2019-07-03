@@ -1,8 +1,25 @@
 # Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
-version: v1.13.1
+version: v1.13.5
 ignore: {}
 # patches apply the minimum changes required to fix a vulnerability
 patch:
   'npm:tunnel-agent:20170305':
     - node-jq > bin-build > download > caw > tunnel-agent:
         patched: '2018-11-06T18:55:39.133Z'
+  SNYK-JS-LODASH-450202:
+    - node-jq > travis-deploy-once > @babel/core > lodash:
+        patched: '2019-07-03T23:40:09.652Z'
+    - node-jq > travis-deploy-once > @babel/core > @babel/types > lodash:
+        patched: '2019-07-03T23:40:09.652Z'
+    - node-jq > travis-deploy-once > @babel/preset-env > @babel/plugin-proposal-unicode-property-regex > @babel/helper-regex > lodash:
+        patched: '2019-07-03T23:40:09.652Z'
+    - node-jq > travis-deploy-once > @babel/preset-env > @babel/plugin-transform-parameters > @babel/helper-get-function-arity > @babel/types > lodash:
+        patched: '2019-07-03T23:40:09.652Z'
+    - node-jq > travis-deploy-once > @babel/core > @babel/helpers > @babel/traverse > @babel/generator > @babel/types > lodash:
+        patched: '2019-07-03T23:40:09.652Z'
+    - node-jq > travis-deploy-once > @babel/preset-env > @babel/plugin-proposal-async-generator-functions > @babel/helper-remap-async-to-generator > @babel/helper-wrap-function > @babel/helper-function-name > @babel/types > lodash:
+        patched: '2019-07-03T23:40:09.652Z'
+    - node-jq > travis-deploy-once > @babel/preset-env > @babel/plugin-transform-async-to-generator > @babel/helper-remap-async-to-generator > @babel/helper-wrap-function > @babel/traverse > @babel/helper-split-export-declaration > @babel/types > lodash:
+        patched: '2019-07-03T23:40:09.652Z'
+    - node-jq > travis-deploy-once > @babel/preset-env > @babel/plugin-proposal-async-generator-functions > @babel/helper-remap-async-to-generator > @babel/helper-wrap-function > @babel/traverse > @babel/helper-function-name > @babel/helper-get-function-arity > @babel/types > lodash:
+        patched: '2019-07-03T23:40:09.652Z'
